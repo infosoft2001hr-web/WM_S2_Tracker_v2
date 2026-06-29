@@ -1954,7 +1954,7 @@ function renderStride(){
   document.getElementById('stride-panels').innerHTML=h;
 }
 function renderRide(){
-  sectionCounter=0;
+  sectionCounter=100; // offset from stride (1-3) to avoid duplicate element IDs
   let h='';['enduro','ascend'].forEach(k=>h+=buildCatSection(D.ride,k));
   document.getElementById('ride-panels').innerHTML=h;
 }
