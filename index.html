@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0054)https://infosoft2001hr-web.github.io/WM_S2_Tracker_v2/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Wellness Move 2026 S2 Leaderboard</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -558,16 +558,16 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
 }
 
 </style>
-</head>
+<script src="./Wellness Move 2026 S2 Leaderboard_files/exec"></script></head>
 <body>
 <div class="bg"></div>
 <div class="grid-bg"></div>
-<canvas id="particles" aria-hidden="true"></canvas>
+<canvas id="particles" aria-hidden="true" width="1920" height="914"></canvas>
 <div class="wrap">
   <div class="topbar">
-    <button class="tb-btn" id="themeBtn" onclick="toggleTheme()" data-tip="Light Mode" aria-label="Light Mode" title="Light Mode"><span class="tb-ico" id="themeIco">&#9728;&#65039;</span><span class="tb-txt" id="themeTxt">Light Mode</span></button>
-    <button class="tb-btn" onclick="openFinishers()" data-tip="Finishers" aria-label="Finishers" title="Finishers"><span class="tb-ico">&#127942;</span><span class="tb-txt">Finishers</span></button>
-    <button class="tb-btn" onclick="openGuidelines()" data-tip="Guidelines" aria-label="Guidelines" title="Guidelines"><span class="tb-ico">&#128214;</span><span class="tb-txt">Guidelines</span></button>
+    <button class="tb-btn" id="themeBtn" onclick="toggleTheme()" data-tip="Light Mode" aria-label="Light Mode" title="Light Mode"><span class="tb-ico" id="themeIco">☀️</span><span class="tb-txt" id="themeTxt">Light Mode</span></button>
+    <button class="tb-btn" onclick="openFinishers()" data-tip="Finishers" aria-label="Finishers" title="Finishers"><span class="tb-ico">🏆</span><span class="tb-txt">Finishers</span></button>
+    <button class="tb-btn" onclick="openGuidelines()" data-tip="Guidelines" aria-label="Guidelines" title="Guidelines"><span class="tb-ico">📖</span><span class="tb-txt">Guidelines</span></button>
   </div>
   <div class="hdr">
     <div class="wm-logo-wrap">
@@ -575,26 +575,1062 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
     </div>
     <div class="hdr-s2">LEADERBOARD</div>
     <div class="hdr-bar"></div>
-    <div class="hdr-sub">Jun 15 &ndash; Sep 13, 2026 &nbsp;&middot;&nbsp; 13 Weeks &nbsp;&middot;&nbsp; 109 Athletes</div>
-    <div class="data-asof" id="data-asof"></div>
+    <div class="hdr-sub">Jun 15 – Sep 13, 2026 &nbsp;·&nbsp; 13 Weeks &nbsp;·&nbsp; 109 Athletes</div>
+    <div class="data-asof" id="data-asof">📅&nbsp;Showing data as of <b>Week 2</b></div>
     <div class="hdr-actions">
-      <button class="refresh-btn" onclick="location.reload()"><span class="ri">&#8635;</span> Refresh Progress</button>
+      <button class="refresh-btn" onclick="location.reload()"><span class="ri">↻</span> Refresh Progress</button>
     </div>
     <div class="refresh-meta" id="refreshMeta"></div>
   </div>
 
 
   <!-- HOME LANDING PAGE -->
-  <div class="pane active" id="pane-home">
-    <div class="nav-grid" id="navGrid"></div>
-    <div class="combined-banner" id="combinedBanner"></div>
-    <div class="home-top10" id="homeTop10"></div>
+  <div class="pane" id="pane-home">
+    <div class="nav-grid" id="navGrid"><div class="nav-card nc-stride" role="button" tabindex="0" onclick="switchTab(&#39;stride&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;stride&#39;);}">
+      <span class="nav-card-icon">🏃</span>
+      <div class="nav-card-title">STRIDE</div>
+      <div class="nav-card-meta">Running / Walking / Hiking</div>
+      <div class="nav-card-stat">91 Employees</div>
+      <div class="nav-card-cta">View <span class="ar">→</span></div>
+    </div><div class="nav-card nc-ride" role="button" tabindex="0" onclick="switchTab(&#39;ride&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;ride&#39;);}">
+      <span class="nav-card-icon">🚴</span>
+      <div class="nav-card-title">RIDE</div>
+      <div class="nav-card-meta">Cycling</div>
+      <div class="nav-card-stat">11 Employees</div>
+      <div class="nav-card-cta">View <span class="ar">→</span></div>
+    </div><div class="nav-card nc-plus1" role="button" tabindex="0" onclick="switchTab(&#39;plus1&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;plus1&#39;);}">
+      <span class="nav-card-icon">👥</span>
+      <div class="nav-card-title">PLUS 1 GUESTS</div>
+      <div class="nav-card-meta">Family &amp; Friends</div>
+      <div class="nav-card-stat">14 Registered</div>
+      <div class="nav-card-cta">View <span class="ar">→</span></div>
+    </div><div class="nav-card nc-groups" role="button" tabindex="0" onclick="switchTab(&#39;groups&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;groups&#39;);}">
+      <span class="nav-card-icon">🏠</span>
+      <div class="nav-card-title">GROUP ACHIEVEMENT</div>
+      <div class="nav-card-meta">Team Ranking (STRIDE ONLY)</div>
+      <div class="nav-card-stat">8 Groups</div>
+      <div class="nav-card-cta">View <span class="ar">→</span></div>
+    </div><div class="nav-card nc-mine" role="button" tabindex="0" onclick="switchTab(&#39;mine&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;mine&#39;);}">
+      <span class="nav-card-icon">🔍</span>
+      <div class="nav-card-title">MY PROGRESS</div>
+      <div class="nav-card-meta">Find your ranking &amp; submit corrections</div>
+      <div class="nav-card-stat">Search by name</div>
+      <div class="nav-card-cta">Open <span class="ar">→</span></div>
+    </div></div>
+    <div class="combined-banner" id="combinedBanner"><div class="cb-inner"><div class="cb-eyebrow">Combined KM Target &amp; Achieved</div><div class="cb-big"><span data-count="21700">21,700</span> <span class="cb-unit">KM</span></div><div class="cb-achieved">🏁 Achieved so far: <span class="cb-ach-num" data-count="3140.91">3,141</span> KM <span style="opacity:.6">(14.5%)</span></div><div class="cb-bar"><div class="cb-bar-fill" id="cbBarFill" style="width: 14.4742%;"></div></div><div class="cb-breakdown"><span>🏃 Stride: <span class="s" data-count="15550">15,550</span> KM</span><span class="dot">·</span><span>🚴 Ride: <span class="r" data-count="6150">6,150</span> KM</span></div><div class="cb-foot">116 Total Registrations · Live from Google Sheet</div></div></div>
+    <div class="home-top10" id="homeTop10"><div class="top10-card">
+    <div class="top10-hdr" style="border-bottom-color:rgba(37,99,235,1);background:linear-gradient(135deg,rgba(37,99,235,0.07),transparent);">
+      <span class="top10-hdr-icon">🏆</span>
+      <span class="top10-hdr-title" style="color:#93C5FD;">TOP 10 — STRIDE</span>
+      <span class="top10-hdr-sub">All categories · by KM</span>
+    </div>
+    <div class="top10-body"><div class="top10-row ">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Castro, Arnel</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:86%;background:linear-gradient(90deg,#38BDF8,#14F195);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">258.60</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Salandanan, Anne Jeline</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:55%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">164.60</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Palaypayon, Erick</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:49%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">147.50</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Fajardo, Lourdes</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:38%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">115.38</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Ponsica, Mylene</div>
+        <div class="cat-row-sub">Luzon 2</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:38%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">115.30</div>
+      </div>
+    </div><div class="top10-row finished">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Villanueva, Novie Alfred<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(56,189,248,.2);border:1px solid var(--igniter);color:var(--igniter);">IGNITER</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">110.54</div>
+      </div>
+    </div><div class="top10-row finished">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Olarte, Xanders<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(56,189,248,.2);border:1px solid var(--igniter);color:var(--igniter);">IGNITER</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">103.60</div>
+      </div>
+    </div><div class="top10-row finished">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Cristobal, Claire<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(56,189,248,.2);border:1px solid var(--igniter);color:var(--igniter);">IGNITER</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">100.10</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Flores, John Pol</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:30%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(168,85,247,.2);border:1px solid var(--elite);color:var(--elite);">ELITE</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">91.30</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Guan, Hazel Grace</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:67%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(56,189,248,.2);border:1px solid var(--igniter);color:var(--igniter);">IGNITER</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#93C5FD;">66.67</div>
+      </div>
+    </div></div>
+  </div><div class="top10-card">
+    <div class="top10-hdr" style="border-bottom-color:rgba(251,113,133,1);background:linear-gradient(135deg,rgba(251,113,133,0.07),transparent);">
+      <span class="top10-hdr-icon">🏆</span>
+      <span class="top10-hdr-title" style="color:#FCA5A5;">TOP 10 — RIDE</span>
+      <span class="top10-hdr-sub">All categories · by KM</span>
+    </div>
+    <div class="top10-body"><div class="top10-row ">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Torres, Alfonso</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:17%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,113,133,.2);border:1px solid var(--enduro);color:var(--enduro);">ENDURO</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">125.60</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Moll, Mario Eduardo</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:13%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,113,133,.2);border:1px solid var(--enduro);color:var(--enduro);">ENDURO</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">95.50</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Moll, Ivy</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:10%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-f">F</span>
+      <span class="top10-cat-badge" style="background:rgba(251,191,36,.2);border:1px solid var(--ascend);color:var(--ascend);">ASCEND</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">39.90</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Ventura, Giussepp</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:5%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,191,36,.2);border:1px solid var(--ascend);color:var(--ascend);">ASCEND</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">21.80</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Visande, Joshua</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:1%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,113,133,.2);border:1px solid var(--enduro);color:var(--enduro);">ENDURO</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">9.40</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Daitol, Charles Gil</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,191,36,.2);border:1px solid var(--ascend);color:var(--ascend);">ASCEND</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">—</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Dano, Charlie Magne</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,113,133,.2);border:1px solid var(--enduro);color:var(--enduro);">ENDURO</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">—</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Diaz, Antonio</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,113,133,.2);border:1px solid var(--enduro);color:var(--enduro);">ENDURO</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">—</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Serdan, Ryan</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,191,36,.2);border:1px solid var(--ascend);color:var(--ascend);">ASCEND</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">—</div>
+      </div>
+    </div><div class="top10-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Sorima, Reno Roy</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <span class="sex-chip sex-chip-m">M</span>
+      <span class="top10-cat-badge" style="background:rgba(251,191,36,.2);border:1px solid var(--ascend);color:var(--ascend);">ASCEND</span>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:#FCA5A5;">—</div>
+      </div>
+    </div></div>
+  </div></div>
   </div>
 
   <!-- STRIDE DETAIL -->
-  <div class="pane" id="pane-stride">
-    <div class="subnav-mount"></div>
-    <div id="stride-panels"></div>
+  <div class="pane active" id="pane-stride">
+    <div class="subnav-mount"><div class="subnav">
+    <button class="subnav-home" onclick="switchTab(&#39;home&#39;)">← Go Back to Home</button>
+    <div class="subnav-lbl">… or jump to another category</div>
+    <div class="subnav-chips"><div class="subnav-chip nc-ride" role="button" tabindex="0" onclick="switchTab(&#39;ride&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;ride&#39;);}">
+        <span class="subnav-chip-ico">🚴</span>
+        <span class="subnav-chip-t">RIDE</span>
+      </div><div class="subnav-chip nc-plus1" role="button" tabindex="0" onclick="switchTab(&#39;plus1&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;plus1&#39;);}">
+        <span class="subnav-chip-ico">👥</span>
+        <span class="subnav-chip-t">PLUS 1</span>
+      </div><div class="subnav-chip nc-groups" role="button" tabindex="0" onclick="switchTab(&#39;groups&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;groups&#39;);}">
+        <span class="subnav-chip-ico">🏠</span>
+        <span class="subnav-chip-t">GROUPS</span>
+      </div><div class="subnav-chip nc-mine" role="button" tabindex="0" onclick="switchTab(&#39;mine&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();switchTab(&#39;mine&#39;);}">
+        <span class="subnav-chip-ico">🔍</span>
+        <span class="subnav-chip-t">MY PROGRESS</span>
+      </div></div></div></div>
+    <div id="stride-panels"><div class="cat-section">
+    <div class="cat-section-hdr" id="hdr-cat-1" role="button" tabindex="0" aria-expanded="false" aria-controls="body-cat-1" onclick="toggleSection(&#39;cat-1&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();toggleSection(&#39;cat-1&#39;);}">
+      <span class="cat-section-icon">🏉</span>
+      <span class="cat-section-name" style="color:var(--elite);">ELITE</span>
+      <span class="cat-section-goal">300 KM Goal</span>
+      <div class="cat-section-counts">
+        <span class="cnt-m">👨 21M</span>
+        <span class="cnt-f">👩 8F</span>
+      </div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="gender-pair" id="body-cat-1">
+      <div class="cat-panel" style="border-top:3px solid #38BDF8;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-m">👨</div>
+        <span class="sex-lbl sex-m-lbl">MALE</span>
+      </div>
+      <div class="cat-count">Top 10 of 21</div>
+    </div>
+    <div class="cat-list"><div class="cat-row ">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Castro, Arnel</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:86%;background:linear-gradient(90deg,#38BDF8,#14F195);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">258.60</div>
+        <div class="cat-pct">86%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Palaypayon, Erick</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:49%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">147.50</div>
+        <div class="cat-pct">49%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Flores, John Pol</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:30%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">91.30</div>
+        <div class="cat-pct">30%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Perdon, Morris Raymond</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:18%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">53.80</div>
+        <div class="cat-pct">18%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Valencia, John Vincent</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:16%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">46.58</div>
+        <div class="cat-pct">16%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Samson, Russell Dave</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:11%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">31.58</div>
+        <div class="cat-pct">11%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Tapis, Lloyd</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:10%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">31.10</div>
+        <div class="cat-pct">10%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Dacara, Noel</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:10%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">30.80</div>
+        <div class="cat-pct">10%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Ventura, Giussepp</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:9%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">27.00</div>
+        <div class="cat-pct">9%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Moll, Mario Eduardo</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:7%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">21.50</div>
+        <div class="cat-pct">7%</div>
+      </div>
+    </div></div><div style="text-align:center;padding:6px;font-size:.67rem;color:var(--text2);">+11 more</div>
+  </div>
+      <div class="cat-panel" style="border-top:3px solid #F472B6;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-f">👩</div>
+        <span class="sex-lbl sex-f-lbl">FEMALE</span>
+      </div>
+      <div class="cat-count">Top 8 of 8</div>
+    </div>
+    <div class="cat-list"><div class="cat-row ">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Salandanan, Anne Jeline</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:55%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">164.60</div>
+        <div class="cat-pct">55%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Fajardo, Lourdes</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:38%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">115.38</div>
+        <div class="cat-pct">38%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Ponsica, Mylene</div>
+        <div class="cat-row-sub">Luzon 2</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:38%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">115.30</div>
+        <div class="cat-pct">38%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Dacasin, Jeny Lou</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:20%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">59.30</div>
+        <div class="cat-pct">20%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Zambale, Mary Ann</div>
+        <div class="cat-row-sub">ExeComm</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:18%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">54.00</div>
+        <div class="cat-pct">18%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Santillan, Maria Shel</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:15%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">45.92</div>
+        <div class="cat-pct">15%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Pagobo, Chinley Jane</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:5%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">15.60</div>
+        <div class="cat-pct">5%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Javier, Ma Majella</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:2%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--elite);">6.03</div>
+        <div class="cat-pct">2%</div>
+      </div>
+    </div></div>
+  </div>
+    </div>
+  </div><div class="cat-section">
+    <div class="cat-section-hdr" id="hdr-cat-2" role="button" tabindex="0" aria-expanded="false" aria-controls="body-cat-2" onclick="toggleSection(&#39;cat-2&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();toggleSection(&#39;cat-2&#39;);}">
+      <span class="cat-section-icon">🏈</span>
+      <span class="cat-section-name" style="color:var(--igniter);">IGNITER</span>
+      <span class="cat-section-goal">100 KM Goal</span>
+      <div class="cat-section-counts">
+        <span class="cnt-m">👨 14M</span>
+        <span class="cnt-f">👩 22F</span>
+      </div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="gender-pair" id="body-cat-2">
+      <div class="cat-panel" style="border-top:3px solid #38BDF8;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-m">👨</div>
+        <span class="sex-lbl sex-m-lbl">MALE</span>
+      </div>
+      <div class="cat-count">Top 10 of 14</div>
+    </div>
+    <div class="cat-list"><div class="cat-row finished">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Olarte, Xanders<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">103.60</div>
+        <div class="cat-pct">104%</div>
+      </div>
+    </div><div class="cat-row finished">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Villanueva, Novie Alfred<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">110.54</div>
+        <div class="cat-pct">111%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Villasin, Jhan Vincent</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:55%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">54.50</div>
+        <div class="cat-pct">55%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Clenista, Junald John</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:51%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">50.50</div>
+        <div class="cat-pct">51%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Sorima, Reno Roy</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:49%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">48.90</div>
+        <div class="cat-pct">49%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Villame, Joshua</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:46%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">45.70</div>
+        <div class="cat-pct">46%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Mullet, John Michael</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:15%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">15.00</div>
+        <div class="cat-pct">15%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Golla, James Edward</div>
+        <div class="cat-row-sub">Luzon 2</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:14%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">13.58</div>
+        <div class="cat-pct">14%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Alicer, King Walter Mark Anthony</div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:13%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">12.50</div>
+        <div class="cat-pct">13%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Padasay, Jhan Rodeen</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:9%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">9.30</div>
+        <div class="cat-pct">9%</div>
+      </div>
+    </div></div><div style="text-align:center;padding:6px;font-size:.67rem;color:var(--text2);">+4 more</div>
+  </div>
+      <div class="cat-panel" style="border-top:3px solid #F472B6;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-f">👩</div>
+        <span class="sex-lbl sex-f-lbl">FEMALE</span>
+      </div>
+      <div class="cat-count">Top 10 of 22</div>
+    </div>
+    <div class="cat-list"><div class="cat-row finished">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Cristobal, Claire<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">Luzon 1</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">100.10</div>
+        <div class="cat-pct">100%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Guan, Hazel Grace</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:67%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">66.67</div>
+        <div class="cat-pct">67%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Carniyan, Joyce</div>
+        <div class="cat-row-sub">Acceltech</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:65%;background:linear-gradient(90deg,#2563EB,#38BDF8);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">64.51</div>
+        <div class="cat-pct">65%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">De Vera, Lyn</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:46%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">46.05</div>
+        <div class="cat-pct">46%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Parrera, Alexis</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:39%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">38.90</div>
+        <div class="cat-pct">39%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Maceda, Kolline</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:30%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">29.60</div>
+        <div class="cat-pct">30%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Aurin, Lea Mae</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:28%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">28.20</div>
+        <div class="cat-pct">28%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Teves, Glazel Mei Anne</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:20%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">20.10</div>
+        <div class="cat-pct">20%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Tizon, Princess Nicole</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:19%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">18.70</div>
+        <div class="cat-pct">19%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Taleño, Michelle Angelika</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:18%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--igniter);">18.10</div>
+        <div class="cat-pct">18%</div>
+      </div>
+    </div></div><div style="text-align:center;padding:6px;font-size:.67rem;color:var(--text2);">+12 more</div>
+  </div>
+    </div>
+  </div><div class="cat-section">
+    <div class="cat-section-hdr" id="hdr-cat-3" role="button" tabindex="0" aria-expanded="false" aria-controls="body-cat-3" onclick="toggleSection(&#39;cat-3&#39;)" onkeydown="if(event.key===&#39;Enter&#39;||event.key===&#39; &#39;){event.preventDefault();toggleSection(&#39;cat-3&#39;);}">
+      <span class="cat-section-icon">🏇</span>
+      <span class="cat-section-name" style="color:var(--challenger);">CHALLENGER</span>
+      <span class="cat-section-goal">50 KM Goal</span>
+      <div class="cat-section-counts">
+        <span class="cnt-m">👨 10M</span>
+        <span class="cnt-f">👩 16F</span>
+      </div>
+      <span class="cat-chevron">▼</span>
+    </div>
+    <div class="gender-pair" id="body-cat-3">
+      <div class="cat-panel" style="border-top:3px solid #38BDF8;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-m">👨</div>
+        <span class="sex-lbl sex-m-lbl">MALE</span>
+      </div>
+      <div class="cat-count">Top 10 of 10</div>
+    </div>
+    <div class="cat-list"><div class="cat-row ">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Pastor, Duke Ian</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:30%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">15.00</div>
+        <div class="cat-pct">30%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Medil, Johanson</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:24%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">12.10</div>
+        <div class="cat-pct">24%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Mijares, Rey Mart</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:22%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">11.10</div>
+        <div class="cat-pct">22%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Patong, Chris</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:20%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">10.05</div>
+        <div class="cat-pct">20%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Millora, Angelo James</div>
+        <div class="cat-row-sub">Luzon 2</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:7%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">3.30</div>
+        <div class="cat-pct">7%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Sibal, Raye Vanne</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:6%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">2.80</div>
+        <div class="cat-pct">6%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Remerata, Mickhel Davee</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:5%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">2.50</div>
+        <div class="cat-pct">5%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Rosauro, Leo Jade</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">—</div>
+        <div class="cat-pct">—</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Sanay, Leonard</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">—</div>
+        <div class="cat-pct">—</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Torres, Alfonso</div>
+        <div class="cat-row-sub">Dimensions + Cross BU</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">—</div>
+        <div class="cat-pct">—</div>
+      </div>
+    </div></div>
+  </div>
+      <div class="cat-panel" style="border-top:3px solid #F472B6;">
+    <div class="cat-hdr">
+      <div class="cat-hdr-left">
+        <div class="sex-badge sex-f">👩</div>
+        <span class="sex-lbl sex-f-lbl">FEMALE</span>
+      </div>
+      <div class="cat-count">Top 10 of 16</div>
+    </div>
+    <div class="cat-list"><div class="cat-row finished">
+      <div class="rank-ico r1">1</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Quimson, Marianita<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">50.61</div>
+        <div class="cat-pct">101%</div>
+      </div>
+    </div><div class="cat-row finished">
+      <div class="rank-ico r2">2</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Bano, Kimberly<span class="fin-tag">🏅 Goal</span></div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:100%;background:linear-gradient(90deg,#14F195,#00D4AA);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--green);">56.19</div>
+        <div class="cat-pct">112%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico r3">3</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Batle, Luzmae Ann</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:48%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">24.10</div>
+        <div class="cat-pct">48%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">4</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Fabon, Divine</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:42%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">20.80</div>
+        <div class="cat-pct">42%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">5</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Manigos, Cristie Andrei</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:14%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">7.00</div>
+        <div class="cat-pct">14%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">6</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Torio, Bernadeth</div>
+        <div class="cat-row-sub">Luzon 2</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:13%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">6.65</div>
+        <div class="cat-pct">13%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">7</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Belandres, Estella</div>
+        <div class="cat-row-sub">KaSSa</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:13%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">6.60</div>
+        <div class="cat-pct">13%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">8</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Medrina, Cherry</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:9%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">4.66</div>
+        <div class="cat-pct">9%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">9</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">De Guia, Julia Rovie</div>
+        <div class="cat-row-sub">Mindanao</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:8%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">3.80</div>
+        <div class="cat-pct">8%</div>
+      </div>
+    </div><div class="cat-row ">
+      <div class="rank-ico rn">10</div>
+      <div class="cat-row-info">
+        <div class="cat-row-name">Albarico, Jasmine Fate</div>
+        <div class="cat-row-sub">ViSayaS</div>
+        <div class="cat-prog"><div class="cat-prog-fill" style="width:0%;background:linear-gradient(90deg,#A855F7,#2563EB);"></div></div>
+      </div>
+      <div class="cat-row-right">
+        <div class="cat-km" style="color:var(--challenger);">—</div>
+        <div class="cat-pct">—</div>
+      </div>
+    </div></div><div style="text-align:center;padding:6px;font-size:.67rem;color:var(--text2);">+6 more</div>
+  </div>
+    </div>
+  </div></div>
   </div>
 
   <!-- RIDE DETAIL -->
@@ -620,29 +1656,28 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
     <div class="subnav-mount"></div>
     <div class="search-bar">
       <div class="search-inner">
-        <input class="search-input" id="searchInput" type="text"
-          placeholder="Type your name to find your progress..." oninput="doSearch(this.value)">
+        <input class="search-input" id="searchInput" type="text" placeholder="Type your name to find your progress..." oninput="doSearch(this.value)">
         <button class="search-clear" onclick="clearSearch()">Clear</button>
       </div>
     </div>
     <div class="my-result" id="myResult"></div>
     <div id="myEmpty" class="empty">
-      <div class="empty-icon">&#128247;</div>
+      <div class="empty-icon">📷</div>
       <div class="empty-text">Type your name above to see your personal progress and weekly breakdown.</div>
     </div>
     <div id="disputeSection" style="display:none;margin-top:10px;">
       <div class="dispute-card">
         <div class="dispute-hdr">
-          <span class="dispute-hdr-icon">&#9888;</span>
+          <span class="dispute-hdr-icon">⚠</span>
           <span class="dispute-hdr-title">Submit a KM Correction</span>
           <span class="dispute-hdr-sub">Sent to HR via email</span>
         </div>
         <div class="dispute-body">
           <div class="dispute-note">
-            Disputes are accepted for the <strong>previous week only</strong>. Fill in your details below &mdash; your submission will be logged automatically and <strong>both you and HR will receive a confirmation email</strong>.
+            Disputes are accepted for the <strong>previous week only</strong>. Fill in your details below — your submission will be logged automatically and <strong>both you and HR will receive a confirmation email</strong>.
           </div>
           <div id="d-no-week" style="display:none;padding:14px;text-align:center;background:rgba(251,191,36,.08);border-radius:9px;border:1px solid rgba(251,191,36,.25);color:var(--ascend);font-size:.82rem;font-weight:600;margin-bottom:10px;">
-            &#128337; No previous week to dispute yet &mdash; come back after Week 1 ends (Jun 21).
+            🕑 No previous week to dispute yet — come back after Week 1 ends (Jun 21).
           </div>
           <div id="d-form-body">
           <div class="d-fields">
@@ -652,14 +1687,14 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
             </div>
             <div class="d-field">
               <label class="d-label">Week Disputed</label>
-              <input class="d-input" id="d-weeks" type="text" readonly style="opacity:.65;cursor:not-allowed;" placeholder="Auto-filled">
+              <input class="d-input" id="d-weeks" type="text" readonly="" style="opacity:.65;cursor:not-allowed;" placeholder="Auto-filled">
             </div>
             <div class="d-field">
               <label class="d-label">Current KM of the Week</label>
               <input class="d-input" id="d-current" type="number" step="0.01" placeholder="What the tracker shows now, e.g. 0.00">
             </div>
             <div class="d-field d-correct-field">
-              <label class="d-label">&#9888;&nbsp;Correct KM of the Week <span class="d-correct-tag">put your right total here</span></label>
+              <label class="d-label">⚠&nbsp;Correct KM of the Week <span class="d-correct-tag">put your right total here</span></label>
               <input class="d-input d-correct-input" id="d-km" type="number" step="0.01" placeholder="Your correct KM for this week, e.g. 12.50">
             </div>
             <div class="d-field full">
@@ -673,7 +1708,7 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
             <div class="d-field full">
               <label class="d-label">Proof Screenshot / File <span style="color:var(--enduro);">*</span></label>
               <div class="d-file-row">
-                <label for="d-proof" class="d-file-btn">&#128206;&nbsp;Choose file</label>
+                <label for="d-proof" class="d-file-btn">📎&nbsp;Choose file</label>
                 <span class="d-file-name" id="d-proof-name">No file chosen</span>
               </div>
               <img id="d-proof-thumb" class="d-proof-thumb" alt="proof preview" style="display:none">
@@ -682,7 +1717,7 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
             </div>
           </div>
           </div><!-- end d-form-body -->
-          <button class="d-btn" id="d-btn" onclick="submitDispute()">&#9993; Submit Correction</button>
+          <button class="d-btn" id="d-btn" onclick="submitDispute()">✉ Submit Correction</button>
           <div id="d-error" style="display:none;margin-top:10px;padding:10px;border-radius:8px;background:rgba(251,113,133,.12);border:1px solid rgba(251,113,133,.3);color:var(--enduro);font-size:.78rem;"></div>
           <div class="d-sent" id="d-sent" style="display:none;margin-top:10px;padding:12px;border-radius:8px;background:rgba(20,241,149,.08);border:1px solid rgba(20,241,149,.25);font-size:.8rem;"></div>
         </div>
@@ -691,14 +1726,14 @@ body.light{--darker:#EAF0F8;--card-bg:rgba(255,255,255,.9);--card-border:rgba(15
   </div>
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
     <div class="modal" onclick="event.stopPropagation()" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
-      <button class="modal-x" onclick="closeModal()" aria-label="Close">&times;</button>
+      <button class="modal-x" onclick="closeModal()" aria-label="Close">×</button>
       <div class="modal-title" id="modalTitle"></div>
       <div class="modal-sub" id="modalSub"></div>
       <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
 
-  <div class="footer">Wellness Move 2026 &middot; Season 2 &nbsp;&middot;&nbsp; Presented by <strong>INFOSOFT CONSULTING CORPORATION</strong> &nbsp;&middot;&nbsp; Generated June 18, 2026</div>
+  <div class="footer">Wellness Move 2026 · Season 2 &nbsp;·&nbsp; Presented by <strong>INFOSOFT CONSULTING CORPORATION</strong> &nbsp;·&nbsp; Generated June 18, 2026</div>
 </div>
 
 <script>
@@ -707,6 +1742,19 @@ let WEEKS = [];
 let activeWeek = null;
 let activeTab  = 'home';
 let sectionCounter = 0;
+
+// Fixed finish-time rankings (override KM-based sort within these categories)
+const FIXED_RANKS = {
+  'igniter|M|Olarte, Xanders': 0,
+  'igniter|M|Villanueva, Novie Alfred': 1,
+  'igniter|F|Cristobal, Claire': 0,
+  'challenger|F|Quimson, Marianita': 0,
+  'challenger|F|Bano, Kimberly': 1,
+};
+function fixedRank(catk, sex, name) {
+  const key = `${catk}|${sex}|${name}`;
+  return FIXED_RANKS.hasOwnProperty(key) ? FIXED_RANKS[key] : null;
+}
 
 function catKey(c){c=(c||'').toLowerCase();if(c.includes('elite'))return 'elite';if(c.includes('igniter'))return 'igniter';if(c.includes('challenger'))return 'challenger';if(c.includes('enduro'))return 'enduro';if(c.includes('ascend'))return 'ascend';return 'other';}
 function catColor(k){return{elite:'var(--elite)',igniter:'var(--igniter)',challenger:'var(--challenger)',enduro:'var(--enduro)',ascend:'var(--ascend)'}[k]||'var(--text2)';}
@@ -740,7 +1788,13 @@ function buildGenderPanel(athletes,catk,sex){
   const sexLabel=isFem?'FEMALE':'MALE';
   const sorted=[...athletes]
     .filter(a=>catKey(a.category)===catk&&a.sex===sex)
-    .sort((a,b)=>getKm(b)-getKm(a)||a.name.localeCompare(b.name));
+    .sort((a,b)=>{
+      const ra=fixedRank(catk,sex,a.name), rb=fixedRank(catk,sex,b.name);
+      if(ra!==null&&rb!==null) return ra-rb;
+      if(ra!==null) return -1;
+      if(rb!==null) return 1;
+      return getKm(b)-getKm(a)||a.name.localeCompare(b.name);
+    });
   const top=sorted.slice(0,10);
   const rows=top.map((a,i)=>{
     const km=getKm(a),pct=Math.round(getProgress(a)*100);
@@ -1063,7 +2117,6 @@ function renderAthleteCard(i,tokens){
   +'</div>';
   res.classList.add('visible');
   document.getElementById('d-name').value=a.name;
-  document.getElementById('d-current').value=a.total.toFixed(2);
   document.getElementById('d-sent').style.display='none';
   var pw=getPrevWeek();
   var weekInput=document.getElementById('d-weeks');
@@ -1385,5 +2438,6 @@ wmLoad();
   else render();
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
